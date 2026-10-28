@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f8fc">
+  <meta name="description" content="Bamilen 档案库：由埃德里奥（Etherial）维护的内部记录系统。公开目录、限制层与封存记录，使用与 SPA 档案库相同的身份系统。">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bamilen 档案库">
+  <meta property="og:title" content="Bamilen 档案库｜BAMILEN ARCHIVE">
+  <meta property="og:description" content="由埃德里奥（Etherial）维护的 Bamilen 内部记录系统。">
+  <meta property="og:url" content="https://ksayus.top/Bamilen-Archive/">
+  <meta name="twitter:card" content="summary">
+  <title>Bamilen 档案库｜BAMILEN ARCHIVE</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230b1f33'/%3E%3Crect x='9' y='9' width='46' height='46' rx='4' fill='none' stroke='%2338bdf8' stroke-width='2'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-size='30' fill='%23eaf6ff' font-family='monospace'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./assets/css/style.css?v=1.0.0">
+</head>
+<body>
+  <a class="skip-link" href="#app">跳到正文</a>
+
+  <header class="site-header" id="site-header">
+    <div class="header-top">
+      <div class="header-top-inner">
+        <span>BAMILEN · INTERNAL RECORD SYSTEM</span>
+        <span class="header-status"><i class="status-dot"></i> ETHERIAL 在线 · <span id="clock">--:--:--</span> UTC</span>
+        <span class="header-top-right">B0 / B1 / B2 / B3 / B4 / B5</span>
+      </div>
+    </div>
+    <div class="header-main">
+      <a class="brand" href="#/">
+        <span class="brand-seal" aria-hidden="true">B</span>
+        <span class="brand-text">
+          <strong>Bamilen 档案库</strong>
+          <small>BAMILEN ARCHIVE</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <a href="#/archives" data-nav="archives">档案库</a>
+        <a href="#/archives?cat=systems" data-nav="systems">智能系统</a>
+        <a href="#/about" data-nav="about">编目基准</a>
+        <a class="external-nav" href="https://ksayus.top/SPA-Archive/" target="_blank" rel="noopener">SPA 档案库 ↗</a>
+      </nav>
+
+      <form class="header-search" id="header-search" role="search">
+        <input type="search" name="q" placeholder="检索编号 / 关键词" aria-label="检索档案" autocomplete="off">
+        <button type="submit" aria-label="检索">⌕</button>
+      </form>
+
+      <div class="auth-area" id="auth-area"></div>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="打开菜单" aria-expanded="false">☰</button>
+    </div>
+
+    <div class="mobile-nav" id="mobile-nav" hidden>
+      <a href="#/archives">档案库</a>
+      <a href="#/archives?cat=systems">智能系统</a>
+      <a href="#/about">编目基准</a>
+      <a href="https://ksayus.top/SPA-Archive/" target="_blank" rel="noopener">SPA 档案库 ↗</a>
+      <a href="#/profile">权限档案</a>
+      <div class="mobile-auth" id="mobile-auth"></div>
+    </div>
+  </header>
+
+  <main class="app-shell" id="app" tabindex="-1">
+    <div class="boot-screen">
+      <div class="boot-seal">B</div>
+      <p class="mono">BAMILEN ARCHIVE · CONNECTING</p>
+      <p>正在接入埃德里奥档案系统……</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-seal">B</span>
+        <div>
+          <strong>Bamilen 档案库</strong>
+          <p>埃德里奥（Etherial）维护 · 勒勒弗斯地下总部</p>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <p class="mono">SUNRISE-I · KOMOS LEGACY</p>
+        <p>《死潮》同人档案站。档案为虚构创作，与现实中任何组织无关。</p>
+        <p>系统状态：<span class="text-blue">在线</span> · 风控：正常</p>
+      </div>
+      <div class="footer-links">
+        <a href="#/about">编目规范</a>
+        <a href="#/archives">全部档案</a>
+        <a href="https://ksayus.top/SPA-Archive/" target="_blank" rel="noopener">SPA 档案库 ↗</a>
+        <a href="#/login">终端登录</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>BAMILEN // ARCHIVE TERMINAL v1.0</span>
+      <span>所有未授权调阅均会被记录</span>
+    </div>
+  </footer>
+
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+
+  <noscript>
+    <div class="noscript">本档案库需要启用 JavaScript 才能接入埃德里奥档案系统。</div>
+  </noscript>
+
+  <script type="module" src="./assets/js/app.js?v=1.0.0"></script>
+</body>
+</html>
