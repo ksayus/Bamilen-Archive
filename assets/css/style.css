@@ -231,6 +231,7 @@ code, .mono { font-family: var(--mono); }
   display: grid;
   gap: 2px;
 }
+.mobile-nav[hidden] { display: none; }
 .mobile-nav a { padding: 9px 4px; font-size: 13px; border-bottom: 1px solid rgba(215, 228, 240, .6); }
 .mobile-auth { display: flex; gap: 14px; padding-top: 10px; }
 
