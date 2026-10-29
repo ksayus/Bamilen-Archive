@@ -62,7 +62,7 @@ export const home = {
           <div class="status-line"><span>当前权限</span><b>${profile ? `${levelInfo.code} · ${levelInfo.name}` : '未登记'}</b></div>
           <div class="status-line"><span>权限来源</span><b>${staff ? '风控委员会核定' : (level >= 0 ? '联合身份档案' : '—')}</b></div>
           <div class="status-line"><span>数据节点</span><b>勒勒弗斯 · 地下总部</b></div>
-          <div class="status-line"><span>架构</span><b>PROTON / KOMOS PROTOCOL</b></div>
+          <div class="status-line"><span>架构</span><b>PROTON / KOMOS LEGACY</b></div>
           <div class="status-line"><span>系统状态</span><b class="text-blue">风控正常</b></div>
           <div class="status-seal">${profile ? escapeHtml(levelInfo.code) : 'B'}</div>
         </aside>
@@ -98,13 +98,13 @@ export const home = {
             <p class="section-kicker">PROTON · SECURITY & ARCHIVE</p>
             <h3 class="panel-title">Bamilen 自主研发的智能体，负责安全风控与档案管理。</h3>
             <p class="panel-copy">
-              埃德里奥基于 Proton 架构。它与桑瑞思的 SPA V 型没有架构继承关系；两者通过底层 Komos 通信协议握手。
+              埃德里奥基于 Proton 架构。它与桑瑞思的 SPA V 型没有架构继承关系；两者都保留 Komos 遗留层，并通过该层的底层协议握手。后期部分 Komos 模块已弃用。
               它管理 Bamilen 的访问审计、数据隔离、D-17 风控与档案完整性，不接入公共网络，也不对外发言。
             </p>
             <div class="inline-tags">
               <span>项目代号 ETHERIAL</span>
               <span>架构 PROTON</span>
-              <span>通信协议 KOMOS</span>
+              <span>遗留层 KOMOS</span>
               <span>部署 勒勒弗斯</span>
             </div>
           </div>
