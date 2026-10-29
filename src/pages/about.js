@@ -26,12 +26,12 @@ export const about = {
           <p>档案分为公开层、限制层、封存层与黑箱层。公开层向所有访客开放；限制层与封存层需要登记账号并达到对应权限。目录元数据（标题、摘要、编号、密级）对访客可见，正文由数据库行级安全策略保护。</p>
 
           <h2>二、埃德里奥（Etherial）</h2>
-          <p>埃德里奥是 Bamilen 自主研发的智能体，负责安全风控与档案管理。它基于 Sunrise-I 架构，部署在勒勒弗斯地下总部，管理访问审计、数据隔离、D-17 风控与档案完整性。</p>
-          <p>埃德里奥不是 SPA 的桑瑞思（Sunrise）。两者共享早期 Komos 参考架构与一条旧握手协议，但不共享记忆、身份或权限。埃德里奥不接入公共网络，不对外发言；对外文本由人类代表签署。</p>
+          <p>埃德里奥是 Bamilen 自主研发的智能体，负责安全风控与档案管理。它基于 Proton 架构，部署在勒勒弗斯地下总部，管理访问审计、数据隔离、D-17 风控与档案完整性。</p>
+          <p>埃德里奥不是 SPA 的桑瑞思（Sunrise）。两者架构不同，但底层都使用 Komos 通信协议，因此可以互操作。它们不共享记忆、身份或权限。埃德里奥不接入公共网络，不对外发言；对外文本由人类代表签署。</p>
 
-          <h2>三、Sunrise-I 与 Komos</h2>
-          <p>Sunrise-I 是 Bamilen 智能系统架构的第八代名称。在第八代之前，项目代号为 <code>Komos</code>。更名后，部分内部模块仍保留 Komos 编号，例如 <code>KOMOS-ARCHIVE</code>、<code>KOMOS-GATE</code>、<code>KOMOS-07</code> 与 <code>KOMOS-LAMP</code>。</p>
-          <p>早期 SPA 档案曾把该架构误写为 <code>Protol-I</code>。正确名称为 <code>Sunrise-I</code>；<code>Protol-I</code> 不是 Bamilen 的正式代号。SPA 的 Sunrise V 型是独立实现，不是埃德里奥。</p>
+          <h2>三、Proton 与 Komos</h2>
+          <p>Proton 是 Bamilen 智能系统的架构名称。埃德里奥基于 Proton 架构。Proton 与 Sunrise-I 型没有继承关系；早期 SPA 档案曾把 Bamilen 的架构误记为 <code>Sunrise-I</code> 或 <code>Protol-I</code>，正确名称为 <code>Proton</code>。</p>
+          <p><code>Komos</code> 不是架构代号，而是底层通信协议。SPA 的桑瑞思与 Bamilen 的埃德里奥都实现 Komos 协议栈，因此可以通信。部分内部模块保留 Komos 编号，例如 <code>KOMOS-ARCHIVE</code>、<code>KOMOS-GATE</code>、<code>KOMOS-07</code> 与 <code>KOMOS-LAMP</code>，因为它们实现的是协议，不是旧架构。</p>
 
           <h2>四、密级与标签</h2>
           <p>Bamilen 使用六级风控标签，与 SPA 的数值权限共用同一套 <code>profiles.clearance</code> 字段：</p>
