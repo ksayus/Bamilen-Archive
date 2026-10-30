@@ -98,7 +98,7 @@ export const home = {
             <p class="section-kicker">PROTON · SECURITY & ARCHIVE</p>
             <h3 class="panel-title">Bamilen 自主研发的智能体，负责安全风控与档案管理。</h3>
             <p class="panel-copy">
-              埃德里奥基于 Proton 架构。它与桑瑞思的 SPA V 型没有架构继承关系；两者都保留 Komos 遗留层，并通过该层的底层协议握手。后期部分 Komos 模块已弃用。
+              埃德里奥基于 Proton 架构。它与桑瑞思的 SPA VIII 型没有架构继承关系；两者都保留 Komos 遗留层，并通过该层的底层协议握手。后期部分 Komos 模块已弃用。
               它管理 Bamilen 的访问审计、数据隔离、D-17 风控与档案完整性，不接入公共网络，也不对外发言。
             </p>
             <div class="inline-tags">
